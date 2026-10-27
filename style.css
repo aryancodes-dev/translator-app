@@ -1,0 +1,35 @@
+*{box-sizing:border-box}html,body{overflow-x:hidden;width:100%}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#fff;background:#0f0a2e;min-height:100vh}
+body.light{color:#0f172a;background:#eef2ff}
+.bg{position:fixed;inset:0;z-index:-1;background:radial-gradient(600px 300px at 10% 0%,#6366f155,transparent),radial-gradient(600px 300px at 95% 100%,#f59e0b55,transparent),linear-gradient(180deg,#0f0a2e,#1e1b4b)}
+body.light .bg{background:radial-gradient(600px 300px at 10% 0%,#c7d2fe88,transparent),radial-gradient(600px 300px at 95% 100%,#fde68a88,transparent),linear-gradient(180deg,#eef2ff,#fff7ed)}
+.app{max-width:640px;width:100%;margin:0 auto;padding:18px}
+header{display:flex;gap:12px;align-items:center;background:linear-gradient(135deg,#ffffff1f,#ffffff0a);border:1px solid #ffffff2e;border-radius:24px;padding:14px 16px;box-shadow:0 12px 30px #00000033;flex-wrap:wrap}
+.logo{width:60px;height:60px;display:grid;place-items:center;font-size:18px;font-weight:900;background:linear-gradient(135deg,#6366f6,#f59e0b);border-radius:18px;flex-shrink:0}
+.head-text{min-width:0;flex:1 1 180px}
+h1{margin:0;font-size:22px}.vbadge{font-size:11px;background:#f59e0b;color:#111;padding:3px 9px;border-radius:20px;vertical-align:middle;white-space:nowrap}
+header p{margin:5px 0 0;color:#cbd5e1;font-size:13px}body.light header p{color:#475569}
+.theme-btn{background:#ffffff1f;border:1px solid #ffffff33;color:#fff;font-size:20px;border-radius:50%;width:44px;height:44px;cursor:pointer}
+.langs{display:flex;gap:10px;align-items:end;margin:16px 0;flex-wrap:wrap}
+.langs label{font-weight:700;font-size:13px;display:flex;flex-direction:column;gap:4px;flex:1 1 140px;min-width:0}
+select,button{font-size:15px;padding:11px 14px;border-radius:12px;border:1px solid #ffffff33;background:#ffffff14;color:#fff;cursor:pointer;min-width:0}
+body.light select,body.light button{background:#fff;color:#0f172a;border-color:#cbd5e1}
+select option{color:#111}
+#swapBtn{font-size:22px;padding:10px 14px}
+.field-label{display:block;font-weight:700;margin:10px 0 6px}
+textarea{width:100%;padding:13px 14px;border-radius:14px;border:1px solid #ffffff33;background:#ffffff12;color:#fff;font-size:16px;outline:none;resize:vertical;line-height:1.5}
+body.light textarea{background:#fff;color:#0f172a;border-color:#cbd5e1}
+.count{color:#cbd5e1;font-size:12px;margin:4px 0}body.light .count{color:#475569}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}
+button.primary{background:linear-gradient(135deg,#6366f6,#f59e0b);border:0;font-weight:800;color:#fff;box-shadow:0 6px 16px #6366f655}
+.result{background:#ffffff12;border:1px solid #ffffff22;border-radius:16px;padding:14px;margin:12px 0;line-height:1.6;overflow-wrap:anywhere;min-height:52px;font-size:17px}
+body.light .result{background:#fff;border-color:#e2e8f0}
+.small{font-size:12px;color:#94a3b8}body.light .small{color:#64748b}
+.examples{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:14px 0;font-size:13px;color:#cbd5e1}
+.examples button{font-size:13px;padding:8px 10px}body.light .examples{color:#475569}
+.panel{background:#ffffff12;border:1px solid #ffffff22;border-radius:16px;padding:12px;margin:12px 0}
+body.light .panel{background:#fff;border-color:#e2e8f0}
+.panel summary{cursor:pointer;font-weight:700}
+.movelog{font-size:13px;color:#cbd5e1;overflow-wrap:anywhere}body.light .movelog{color:#475569}
+.foot{color:#94a3b8;font-size:12px;line-height:1.6;overflow-wrap:anywhere;text-align:center}
+@media (max-width:600px){.app{padding:12px}h1{font-size:20px}.logo{width:50px;height:50px;font-size:16px}button,select{font-size:14px;padding:10px 12px}}
